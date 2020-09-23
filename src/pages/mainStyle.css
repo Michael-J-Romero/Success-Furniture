@@ -167,3 +167,15 @@ button.MuiButtonBase-root.MuiButton-root.MuiButton-outlined.sellerButton {
 .sellerImage.n4{
     background-position-y: bottom;
 }
+
+
+@media only screen and (max-width: 600px) {
+    .title {
+    font-size: 34px;
+    display: block;
+
+    }
+    .mainContent {
+        margin: -6vw 24px 0;
+    }
+}
