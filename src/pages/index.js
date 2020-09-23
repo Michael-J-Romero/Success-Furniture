@@ -114,7 +114,6 @@ function Sellers(){
   return <div className='sellerList'>
     {list.map((e,i)=><div onClick={()=>{ 
       window.open(e.link, '_blank');
-      window.location.href =e.link;console.log(e.link)
       }} className='seller'>
       <span className='sellerName'>{e.name} </span>
       <div className={`sellerImage n${i}`} style={{backgroundImage:`url(${e.image})`}}/>
