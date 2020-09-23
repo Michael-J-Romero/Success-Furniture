@@ -12,7 +12,9 @@ console.log(test2())
 console.log(test())
 
 
-let names=['john','mikke','ashley']
+let names=['Sales Representative','Customer Service','Corporate']
+let phones=['909-287-7354','909-548-8253','626-457-9346']
+let ems=['Omar@success-furniture.com','Mike@success-furniture.com','Dion@success-furniture.com']
 const IndexPage = () => {
 let [open,setOpen]=useState(false)
 let [selected,setSelected]=useState(0)
@@ -20,13 +22,21 @@ let [selected,setSelected]=useState(0)
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     
     <SEO title="Home" />
-    <Dialog selectedValue={selected} open={open} onClose={()=>{setOpen(false)}} >
-      Contact one of out sellers:
-      <div style={{display:'flex',flexDirection:'row'}}>
+    <Dialog selectedValue={selected} open={open} onClose={()=>{setOpen(false)}} ><div className='ascs'>
 
-{names.map((e)=>{
-  return <div style={{background:'white',margin:'12px'}}>{e}</div>
+      Contact us:
+  
+      <div style={{display:'flex',flexDirection:'column',textAlign:'center'}}>
+
+{names.map((e,i)=>{
+  return <div className='asc'>
+    {e}:<br/>
+    {ems[i]}<br/>
+    {phones[i]}
+    
+    </div>
 })}
+  </div>
 </div>
       </Dialog>
     <div className='pageContainer fabric'>
@@ -51,7 +61,8 @@ let [selected,setSelected]=useState(0)
     
     
        </div>
-    <Box my={4}>   <Paper><Box p={4}><Sellers/></Box></Paper>
+
+       <Box>   <Box py={4}><Sellers/></Box>
     </Box>
        </div>
        </div>
@@ -103,7 +114,7 @@ function Sellers(){
   return <div className='sellerList'>
     {list.map((e,i)=><div onClick={()=>{ 
       window.open(e.link, '_blank');
-      // window.location.href =e.link;console.log(e.link)
+      window.location.href =e.link;console.log(e.link)
       }} className='seller'>
       <span className='sellerName'>{e.name} </span>
       <div className={`sellerImage n${i}`} style={{backgroundImage:`url(${e.image})`}}/>
