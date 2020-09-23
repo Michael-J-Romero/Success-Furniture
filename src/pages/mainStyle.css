@@ -2,10 +2,17 @@
 img{
     margin: 0;
 }
+.MuiPaper-root {
+    color: rgba(0, 0, 0, 0.87);
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    background-color: #ffffffad !important;
+}
 /* utilities */
 .u-centerX{
     width: 100%;
     margin: auto;
+    width: max-content;
+    margin-top: 12px;
 }
 .fabric{
     background-size: 22%;
@@ -14,7 +21,7 @@ img{
 }
 .wood{
     background-size: 70%;
-    background-image: url(http://s3.amazonaws.com/everystockphoto/fspid31/29/71/07/3/tileable-light-wood-2971073-o.jpg);
+    background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20200807/pngtree-plane-wood-texture-seamless-background-image_387389.jpg);
 }
 /* atoms */
 .header3{
@@ -73,8 +80,7 @@ header.pageHeader {
 .mainContent {
     margin: 0 24px;
     padding: 24px;
-    background: #ffffffb3;
-    margin-top: -100px;
+    background: #f4e2bc;    margin-top: -100px;
     position: relative;
     border-radius: 5px;
     box-shadow: 2px 2px 2px #00000047;
@@ -82,8 +88,7 @@ header.pageHeader {
 .openingMessage{
     padding: 24px 48px;
     color: #000000ad;
-    background: #ffcc6699;
-    border-radius: 5px;
+    background: #f7f1e6;    border-radius: 5px;
 }
 .sellerList{
     display: flex;
@@ -95,10 +100,13 @@ header.pageHeader {
     display: flex;
     flex-direction: column;
     border-radius: 5px;
-    background: #336699;
+    background: #f4e2bc;
     width: 30%;
     margin: 24px 0;
-    box-shadow: 2px 3px 3px #00000096;
+    box-shadow: 1px 2px 2px #00000063;
+    /* border: 2px solid #50a4ab; */
+    font-family: sans-serif;
+    cursor: pointer;
 }
 .sellerName {
     display: inline-block;
@@ -113,8 +121,13 @@ header.pageHeader {
     justify-content: center;
     flex-grow: 1;
     padding: 24px;
-    background: #ffffff47;
-    display: inline-block;
+    background: #ffffffcc;
+        display: inline-block;
+}
+button.MuiButtonBase-root.MuiButton-root.MuiButton-outlined.sellerButton {
+    background: #e8fdfdcc;
+    color: #00BCD4 !important;
+    border-color: #00BCD4;
 }
 .sellerButton{
     color:white !important;
