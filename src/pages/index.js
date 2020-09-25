@@ -24,20 +24,18 @@ let [selected,setSelected]=useState(0)
     <SEO title="Home" />
     <Dialog selectedValue={selected} open={open} onClose={()=>{setOpen(false)}} ><div className='ascs'>
 
-      Contact us:
+     <h2 style={{fontWeight:'300'}}> Contact us:</h2>
   
       <div style={{display:'flex',flexDirection:'column',textAlign:'center'}}>
-
-{names.map((e,i)=>{
-  return <div className='asc'>
-    {e}:<br/>
-    {ems[i]}<br/>
-    {phones[i]}
+ <div className='asc'>
+ <span style = {{color:"#333",fontWeight:300,marginBottom:"8px",display:"block"}}>Sales / Customer Service</span>
+    <strong>Call:</strong> (844) 883-3822<br/>
+ 
+    <strong>Or e-mail:</strong> sales@empoweringSuccessNow
     
     </div>
-})}
-  </div><div style = {{background:"#ccc",display:"inline-block"}}>
-  <Button  variant='outlined' onClick={()=>{setOpen(false)}}>Close</Button></div>
+  </div><br/><div style = {{background:"#ccc",display:"inline-block",width:"100%"}}>
+  <Button fullWidth variant='outlined' onClick={()=>{setOpen(false)}}>Close</Button></div>
 </div>
       </Dialog>
     <div className='pageContainer fabric'>
