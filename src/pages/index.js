@@ -36,8 +36,8 @@ let [selected,setSelected]=useState(0)
     
     </div>
 })}
-  </div>
-  <Button color='primary' variant='contained' onClick={()=>{setOpen(false)}}>Close</Button>
+  </div><div style = {{background:"#ccc",display:"inline-block"}}>
+  <Button  variant='outlined' onClick={()=>{setOpen(false)}}>Close</Button></div>
 </div>
       </Dialog>
     <div className='pageContainer fabric'>
