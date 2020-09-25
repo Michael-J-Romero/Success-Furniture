@@ -31,7 +31,6 @@ let [selected,setSelected]=useState(0)
  <span style = {{color:"#333",fontWeight:300,marginBottom:"8px",display:"block"}}>Sales / Customer Service</span>
     <strong>Call:</strong> (844) 883-3822<br/>
  
-    <strong>Or e-mail:</strong> sales@empoweringSuccessNow
     
     </div>
   </div><br/><div style = {{background:"#ccc",display:"inline-block",width:"100%"}}>
