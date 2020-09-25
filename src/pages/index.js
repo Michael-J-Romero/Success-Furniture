@@ -13,8 +13,8 @@ console.log(test())
 
 
 let names=['Sales Representative','Customer Service','Corporate']
-let phones=['909-287-7354','909-548-8253','626-457-9346']
-let ems=['Omar@success-furniture.com','Mike@success-furniture.com','Dion@success-furniture.com']
+let phones=['(844) 883-3822','-','-']
+let ems=['sales@successFurnishings.com','contact@successFurnishings.com','corporate@successFurnishings.com']
 const IndexPage = () => {
 let [open,setOpen]=useState(false)
 let [selected,setSelected]=useState(0)
@@ -37,6 +37,7 @@ let [selected,setSelected]=useState(0)
     </div>
 })}
   </div>
+  <Button color='primary' variant='contained' onClick={()=>{setOpen(false)}}>Close</Button>
 </div>
       </Dialog>
     <div className='pageContainer fabric'>
